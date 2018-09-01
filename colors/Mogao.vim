@@ -112,7 +112,7 @@ let s:theme = {
     \   'conceal_bg'             : '',
     \   'foldcolumn_fg'          : '',
     \   'foldcolumn_bg'          : '',
-    \   'specialkey'             : '',
+    \   'specialkey'             : ['color02', 'none', 'none'],
     \   'directory'              : '',
     \   'modemsg'                : '',
     \   'moremsg'                : '',
@@ -148,6 +148,7 @@ let s:theme = {
     \   'ignore'                 : ['none', 'none', 'strikethrough'],
     \   'error'                  : ['color09', 'none', 'none'],
     \   'todo'                   : ['color05', 'none', 'bold'],
+    \   'colorcolumn'            : ['none', 'color02', 'none'],
     \   }
 
 function! s:hi(group, colors)
@@ -199,6 +200,8 @@ function! s:apply_theme()
     call s:hi('TabLine',           s:theme.tabline_inactive)
     call s:hi('TabLineFill',       s:theme.tabline_bg)
     call s:hi('TabLineSel',        s:theme.tabline_active)
+    call s:hi('SpecialKey',        s:theme.specialkey)
+    call s:hi('ColorColumn',       s:theme.colorcolumn)
 
     call s:hi('Comment',           s:theme.comment)
 
@@ -244,18 +247,17 @@ function! s:apply_theme()
     call s:hi('Todo',              s:theme.todo)
 
     " TODO
-    call s:hi('Conceal',      s:theme.conceal)
-    call s:hi('FoldColumn',   s:theme.folded)
-    call s:hi('SpecialKey',   s:theme.specialkey)
-    call s:hi('Directory',    s:theme.directory)
-    call s:hi('ModeMsg',      s:theme.modemsg)
-    call s:hi('MoreMsg',      s:theme.moremsg)
-    call s:hi('Question',     s:theme.question)
-    call s:hi('WarningMsg',   s:theme.warningmsg)
-    call s:hi('MatchParen',   s:theme.matchparen)
-    call s:hi('Folded',       s:theme.folded)
-    call s:hi('WildMenu',     s:theme.wildmenu)
-    call s:hi('SignColumn',   s:theme.signcolumn)
+    call s:hi('Conceal',           s:theme.conceal)
+    call s:hi('FoldColumn',        s:theme.folded)
+    call s:hi('Directory',         s:theme.directory)
+    call s:hi('ModeMsg',           s:theme.modemsg)
+    call s:hi('MoreMsg',           s:theme.moremsg)
+    call s:hi('Question',          s:theme.question)
+    call s:hi('WarningMsg',        s:theme.warningmsg)
+    call s:hi('MatchParen',        s:theme.matchparen)
+    call s:hi('Folded',            s:theme.folded)
+    call s:hi('WildMenu',          s:theme.wildmenu)
+    call s:hi('SignColumn',        s:theme.signcolumn)
 endfunction
 
 " Main =========================================================================
