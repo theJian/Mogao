@@ -119,7 +119,7 @@ let s:theme = {
     \   'question'               : '',
     \   'warningmsg'             : '',
     \   'conceal'                : '',
-    \   'signcolumn'             : '',
+    \   'signcolumn'             : ['color10', 'background', 'none'],
     \   'comment'                : ['color14', 'none', 'italic'],
     \   'constant'               : ['color10', 'none'],
     \   'string'                 : ['color04', 'none', 'underline'],
@@ -149,6 +149,9 @@ let s:theme = {
     \   'error'                  : ['color09', 'none', 'none'],
     \   'todo'                   : ['color05', 'none', 'bold'],
     \   'colorcolumn'            : ['none', 'color02', 'none'],
+    \   'title'                  : ['color12', 'none', 'bold'],
+    \   'attr'                   : ['color06', 'none', 'italic'],
+    \   'htmlTagName'            : ['color03', 'none', 'none'],
     \   }
 
 function! s:hi(group, colors)
@@ -245,6 +248,11 @@ function! s:apply_theme()
     call s:hi('Ignore',            s:theme.ignore)
     call s:hi('Error',             s:theme.error)
     call s:hi('Todo',              s:theme.todo)
+
+    " HTML
+    call s:hi('htmlTitle',         s:theme.title)
+    call s:hi('htmlArg',           s:theme.attr)
+    call s:hi('htmlTagName',       s:theme.htmlTagName)
 
     " TODO
     call s:hi('Conceal',           s:theme.conceal)
