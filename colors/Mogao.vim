@@ -113,7 +113,7 @@ let s:theme = {
     \   'foldcolumn_fg'          : '',
     \   'foldcolumn_bg'          : '',
     \   'specialkey'             : ['color02', 'none', 'none'],
-    \   'directory'              : '',
+    \   'directory'              : ['color03', 'none', 'none'],
     \   'modemsg'                : '',
     \   'moremsg'                : '',
     \   'question'               : '',
@@ -208,6 +208,7 @@ function! s:apply_theme()
     call s:hi('TabLineSel',        s:theme.tabline_active)
     call s:hi('SpecialKey',        s:theme.specialkey)
     call s:hi('ColorColumn',       s:theme.colorcolumn)
+    call s:hi('Directory',         s:theme.directory)
 
     call s:hi('Comment',           s:theme.comment)
 
@@ -267,7 +268,6 @@ function! s:apply_theme()
     " TODO
     call s:hi('Conceal',           s:theme.conceal)
     call s:hi('FoldColumn',        s:theme.folded)
-    call s:hi('Directory',         s:theme.directory)
     call s:hi('ModeMsg',           s:theme.modemsg)
     call s:hi('MoreMsg',           s:theme.moremsg)
     call s:hi('Question',          s:theme.question)
