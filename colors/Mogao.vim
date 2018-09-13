@@ -152,6 +152,9 @@ let s:theme = {
     \   'title'                  : ['color12', 'none', 'bold'],
     \   'attr'                   : ['color06', 'none', 'italic'],
     \   'htmlTagName'            : ['color03', 'none', 'none'],
+    \   'embed'                  : ['color13', 'none', 'none'],
+    \   'vimOption'              : ['color10', 'none', 'none'],
+    \   'vimHiAttrib'            : ['color01', 'none', 'none'],
     \   }
 
 function! s:hi(group, colors)
@@ -253,6 +256,13 @@ function! s:apply_theme()
     call s:hi('htmlTitle',         s:theme.title)
     call s:hi('htmlArg',           s:theme.attr)
     call s:hi('htmlTagName',       s:theme.htmlTagName)
+
+    " JavaScript
+    call s:hi('javaScriptEmbed',   s:theme.embed)
+
+    " Vim
+    call s:hi('vimOption',         s:theme.vimOption)
+    call s:hi('vimHiAttrib',       s:theme.vimHiAttrib)
 
     " TODO
     call s:hi('Conceal',           s:theme.conceal)
