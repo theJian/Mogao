@@ -253,6 +253,9 @@ function! s:apply_theme()
     call s:hi('Error',             s:theme.error)
     call s:hi('Todo',              s:theme.todo)
 
+    call s:hi('Title',             s:theme.title)
+    call s:hi('helpHeader',        s:theme.title)
+
     " HTML
     call s:hi('htmlTitle',         s:theme.title)
     call s:hi('htmlArg',           s:theme.attr)
@@ -264,6 +267,14 @@ function! s:apply_theme()
     " Vim
     call s:hi('vimOption',         s:theme.vimOption)
     call s:hi('vimHiAttrib',       s:theme.vimHiAttrib)
+
+    " Markdown
+    call s:hi('markdownH1',        s:theme.title)
+    call s:hi('markdownH2',        s:theme.title)
+    call s:hi('markdownH3',        s:theme.title)
+    call s:hi('markdownH4',        s:theme.title)
+    call s:hi('markdownH5',        s:theme.title)
+    call s:hi('markdownH6',        s:theme.title)
 
     " TODO
     call s:hi('Conceal',           s:theme.conceal)
