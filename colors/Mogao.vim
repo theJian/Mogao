@@ -134,7 +134,7 @@ let s:theme = {
     \   'operator'               : ['color11', 'none', 'none'],
     \   'keyword'                : ['color13', 'none', 'none'],
     \   'exception'              : ['color09', 'none', 'none'],
-    \   'preproc'                : ['color05', 'none', 'none'],
+    \   'preproc'                : ['color13', 'none', 'none'],
     \   'type'                   : ['color09', 'none', 'none'],
     \   'special'                : ['color07', 'none', 'none'],
     \   'specialchar'            : ['color01', 'none', 'none'],
@@ -276,7 +276,7 @@ function! s:apply_theme()
     call s:hi('markdownH6',        s:theme.title)
 
     " Clojure
-    call s:hi('clojureMacro',      s:theme.preproc)
+    call s:hi('clojureMacro',      s:theme.function)
 
     " TODO
     call s:hi('Conceal',           s:theme.conceal)
