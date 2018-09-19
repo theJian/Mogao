@@ -85,8 +85,6 @@ let s:theme = {
     \   'vertsplit'              : ['background', 'color07'],
     \   'statusline_active'      : ['color11', 'color02', 'none'],
     \   'statusline_inactive'    : ['color06', 'none', 'underline'],
-    \   'todo_fg'                : '',
-    \   'todo_bg'                : '',
     \   'error_fg'               : '',
     \   'error_bg'               : '',
     \   'matchparen'             : ['.', 'none', 'underline'],
@@ -117,7 +115,7 @@ let s:theme = {
     \   'modemsg'                : '',
     \   'moremsg'                : '',
     \   'question'               : '',
-    \   'warningmsg'             : '',
+    \   'warningmsg'             : ['color09', 'none', 'none'],
     \   'conceal'                : '',
     \   'signcolumn'             : ['color10', 'background', 'none'],
     \   'comment'                : ['color14', 'none', 'italic'],
@@ -136,7 +134,7 @@ let s:theme = {
     \   'operator'               : ['color11', 'none', 'none'],
     \   'keyword'                : ['color13', 'none', 'none'],
     \   'exception'              : ['color09', 'none', 'none'],
-    \   'preproc'                : ['color02', 'none', 'none'],
+    \   'preproc'                : ['color05', 'none', 'none'],
     \   'type'                   : ['color09', 'none', 'none'],
     \   'special'                : ['color07', 'none', 'none'],
     \   'specialchar'            : ['color01', 'none', 'none'],
@@ -255,6 +253,7 @@ function! s:apply_theme()
 
     call s:hi('Title',             s:theme.title)
     call s:hi('helpHeader',        s:theme.title)
+    call s:hi('WarningMsg',        s:theme.warningmsg)
 
     " HTML
     call s:hi('htmlTitle',         s:theme.title)
@@ -276,13 +275,15 @@ function! s:apply_theme()
     call s:hi('markdownH5',        s:theme.title)
     call s:hi('markdownH6',        s:theme.title)
 
+    " Clojure
+    call s:hi('clojureMacro',      s:theme.preproc)
+
     " TODO
     call s:hi('Conceal',           s:theme.conceal)
     call s:hi('FoldColumn',        s:theme.folded)
     call s:hi('ModeMsg',           s:theme.modemsg)
     call s:hi('MoreMsg',           s:theme.moremsg)
     call s:hi('Question',          s:theme.question)
-    call s:hi('WarningMsg',        s:theme.warningmsg)
     call s:hi('MatchParen',        s:theme.matchparen)
     call s:hi('Folded',            s:theme.folded)
     call s:hi('WildMenu',          s:theme.wildmenu)
