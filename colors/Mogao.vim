@@ -262,6 +262,8 @@ function! s:apply_theme()
 
     " JavaScript
     call s:hi('javaScriptEmbed',   s:theme.embed)
+    call s:hi('javaScriptParens',  s:theme.delimiter)
+    call s:hi('javaScriptBraces',  s:theme.delimiter)
 
     " Vim
     call s:hi('vimOption',         s:theme.vimOption)
