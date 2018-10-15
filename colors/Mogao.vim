@@ -87,7 +87,7 @@ let s:theme = {
     \   'statusline_inactive'    : ['color06', 'none', 'underline'],
     \   'error_fg'               : '',
     \   'error_bg'               : '',
-    \   'matchparen'             : ['.', 'none', 'underline'],
+    \   'matchparen'             : ['color03', 'color02', 'underline'],
     \   'visual'                 : ['color15', 'color02', 'bold'],
     \   'folded'                 : ['color14', 'none', 'strikethrough'],
     \   'wildmenu'               : ['color11', 'color08', 'underline'],
