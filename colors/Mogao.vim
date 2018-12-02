@@ -85,8 +85,6 @@ let s:theme = {
     \   'vertsplit'              : ['background', 'color07'],
     \   'statusline_active'      : ['color11', 'color02', 'none'],
     \   'statusline_inactive'    : ['color06', 'none', 'underline'],
-    \   'error_fg'               : '',
-    \   'error_bg'               : '',
     \   'matchparen'             : ['color03', 'color02', 'underline'],
     \   'visual'                 : ['color15', 'color02', 'bold'],
     \   'folded'                 : ['color14', 'none', 'strikethrough'],
@@ -116,6 +114,7 @@ let s:theme = {
     \   'moremsg'                : '',
     \   'question'               : '',
     \   'warningmsg'             : ['color09', 'none', 'none'],
+    \   'errormsg'               : ['color15', 'color01', 'none'],
     \   'conceal'                : '',
     \   'signcolumn'             : ['color10', 'background', 'none'],
     \   'comment'                : ['color14', 'none', 'italic'],
@@ -254,6 +253,7 @@ function! s:apply_theme()
     call s:hi('Title',             s:theme.title)
     call s:hi('helpHeader',        s:theme.title)
     call s:hi('WarningMsg',        s:theme.warningmsg)
+    call s:hi('ErrorMsg',          s:theme.errormsg)
 
     " HTML
     call s:hi('htmlTitle',         s:theme.title)
