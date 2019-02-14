@@ -144,7 +144,7 @@ let s:theme = {
     \   'underlined'             : ['color09', 'none', 'underline'],
     \   'ignore'                 : ['none', 'none', 'strikethrough'],
     \   'error'                  : ['color09', 'none', 'none'],
-    \   'todo'                   : ['color05', 'none', 'bold'],
+    \   'todo'                   : ['color11', 'none', 'bold'],
     \   'colorcolumn'            : ['none', 'color02', 'none'],
     \   'title'                  : ['color12', 'none', 'bold'],
     \   'attr'                   : ['color06', 'none', 'italic'],
@@ -280,7 +280,6 @@ function! s:apply_theme()
     " Clojure
     call s:hi('clojureMacro',      s:theme.function)
 
-    " TODO
     call s:hi('Conceal',           s:theme.conceal)
     call s:hi('FoldColumn',        s:theme.folded)
     call s:hi('ModeMsg',           s:theme.modemsg)
