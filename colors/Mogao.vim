@@ -119,7 +119,7 @@ let s:theme = {
     \   'signcolumn'             : ['color10', 'background', 'none'],
     \   'comment'                : ['color14', 'none', 'italic'],
     \   'constant'               : ['color10', 'none'],
-    \   'string'                 : ['color04', 'none', 'underline'],
+    \   'string'                 : ['color04', 'none', 'none'],
     \   'character'              : ['color04'],
     \   'number'                 : ['color12'],
     \   'boolean'                : ['color10'],
