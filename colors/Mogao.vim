@@ -104,6 +104,7 @@ let s:theme = {
     \   'tabline_inactive'       : ['color06', 'color08', 'none'],
     \   'normal'                 : ['foreground', 'background'],
     \   'nontext'                : ['color08', 'background'],
+    \   'endofbuffer'            : ['background', 'background'],
     \   'conceal_fg'             : '',
     \   'conceal_bg'             : '',
     \   'foldcolumn_fg'          : '',
@@ -289,6 +290,8 @@ function! s:apply_theme()
     call s:hi('Folded',            s:theme.folded)
     call s:hi('WildMenu',          s:theme.wildmenu)
     call s:hi('SignColumn',        s:theme.signcolumn)
+    call s:hi('EndOfBuffer',       s:theme.endofbuffer)
+
 endfunction
 
 " Main =========================================================================
