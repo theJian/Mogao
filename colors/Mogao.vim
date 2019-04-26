@@ -77,7 +77,7 @@ let s:theme = {
     \   'cursor'                 : ['color15', 'color08'],
     \   'cursorline'             : ['none', 'color08', 'none'],
     \   'cursorcolumn'           : ['none', 'color08', 'none'],
-    \   'cursorlinenr'           : ['color03', 'color08'],
+    \   'cursorlinenr'           : ['color03', '.'],
     \   'popupmenu'              : ['color11', 'color08'],
     \   'popupmenu_select'       : ['color15', 'color07', 'bold'],
     \   'search'                 : ['.', '.', 'reverse'],
