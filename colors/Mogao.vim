@@ -99,7 +99,7 @@ let s:theme = {
     \   'diffdelete_bg'          : '',
     \   'difftext_fg'            : '',
     \   'difftext_bg'            : '',
-    \   'tabline_bg'             : ['color08', '.', 'strikethrough'],
+    \   'tabline_bg'             : ['color06', 'color08', 'strikethrough'],
     \   'tabline_active'         : ['color03', 'background', 'bold'],
     \   'tabline_inactive'       : ['color06', 'color08', 'none'],
     \   'normal'                 : ['foreground', 'background'],
