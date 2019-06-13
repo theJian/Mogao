@@ -1,14 +1,13 @@
 "===============================================================================
 " Theme: Mogao
 " URL: https://github.com/theJian/vim-mogao
-" Author: theJian <thejianmail@gmail.com>
+" Maintainer: theJian <thejianmail@gmail.com>
 " License: GPL
 "===============================================================================
 
 let s:info = {}
 let s:info.name    = 'Mogao Color Scheme'
-let s:info.version = '0.1.0'
-let s:info.author  = 'theJian <thejianmail@gmail.com>'
+let s:info.maintainer  = 'theJian <thejianmail@gmail.com>'
 let s:info.url     = 'https://github.com/theJian/vim-mogao'
 let s:info.license = 'GPL'
 
@@ -26,22 +25,22 @@ command! -nargs=0 Mogao :call g:Mogao()
 let s:palette = {}
 let s:palette.none = 'NONE'
 let s:palette.color00 = '#10100e'
-let s:palette.color01 = '#744542'
-let s:palette.color02 = '#11342e'
-let s:palette.color03 = '#978253'
-let s:palette.color04 = '#587775'
-let s:palette.color05 = '#584744'
-let s:palette.color06 = '#756e61'
-let s:palette.color07 = '#514c41'
-let s:palette.color08 = '#1c2321'
-let s:palette.color09 = '#ae7257'
-let s:palette.color10 = '#466a62'
-let s:palette.color11 = '#c6b39c'
-let s:palette.color12 = '#7e8888'
-let s:palette.color13 = '#746c70'
-let s:palette.color14 = '#5c584d'
-let s:palette.color15 = '#d4d1cc'
-let s:palette.foreground = '#a3a397'
+let s:palette.color01 = '#792423'
+let s:palette.color02 = '#005A46'
+let s:palette.color03 = '#9E7D57'
+let s:palette.color04 = '#4379A1'
+let s:palette.color05 = '#362325'
+let s:palette.color06 = '#418C88'
+let s:palette.color07 = '#E1E0DB'
+let s:palette.color08 = '#171714'
+let s:palette.color09 = '#F1A19B'
+let s:palette.color10 = '#47C1A8'
+let s:palette.color11 = '#F8D2A4'
+let s:palette.color12 = '#ADDAF1'
+let s:palette.color13 = '#625260'
+let s:palette.color14 = '#D7EBE7'
+let s:palette.color15 = '#FDFDFD'
+let s:palette.foreground = '#E1E0DB'
 let s:palette.background = '#10100e'
 
 " Neovim terminal colors
