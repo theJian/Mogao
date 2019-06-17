@@ -42,6 +42,7 @@ let s:palette.color14 = '#828871'
 let s:palette.color15 = '#E1E0DB'
 let s:palette.foreground = '#C6C1AD'
 let s:palette.background = '#10100E'
+let s:palette.cursorbackground = '#121211'
 
 " Neovim terminal colors
 let g:terminal_color_0  = s:palette.color00
@@ -74,8 +75,8 @@ let s:ft.standout      = 'cterm=standout gui=standout'
 
 let s:theme = {
     \   'cursor'                 : ['color15', 'color08'],
-    \   'cursorline'             : ['none', 'color08', 'none'],
-    \   'cursorcolumn'           : ['none', 'color08', 'none'],
+    \   'cursorline'             : ['none', 'cursorbackground', 'none'],
+    \   'cursorcolumn'           : ['none', 'cursorbackground', 'none'],
     \   'cursorlinenr'           : ['color03', '.'],
     \   'popupmenu'              : ['color11', 'color08'],
     \   'popupmenu_select'       : ['color15', 'color07', 'bold'],
@@ -119,32 +120,32 @@ let s:theme = {
     \   'signcolumn'             : ['color10', 'background', 'none'],
     \   'comment'                : ['color14', 'none', 'italic'],
     \   'constant'               : ['color10', 'none'],
-    \   'string'                 : ['color04', 'none', 'none'],
-    \   'character'              : ['color04'],
-    \   'number'                 : ['color12'],
-    \   'boolean'                : ['color10'],
-    \   'float'                  : ['color12'],
-    \   'identifier'             : ['color03', 'none', 'none'],
+    \   'string'                 : ['color10', 'none', 'italic'],
+    \   'character'              : ['color10', 'none', 'italic'],
+    \   'number'                 : ['color10'],
+    \   'boolean'                : ['color10', 'none', 'bold'],
+    \   'float'                  : ['color10'],
+    \   'identifier'             : ['color11', 'none', 'none'],
     \   'function'               : ['color11', 'none', 'none'],
-    \   'statement'              : ['color06', 'none', 'none'],
-    \   'conditional'            : ['color01', 'none', 'none'],
-    \   'repeat'                 : ['color06', 'none', 'none'],
-    \   'label'                  : ['color01', 'none', 'none'],
-    \   'operator'               : ['color11', 'none', 'none'],
+    \   'statement'              : ['color02', 'none', 'none'],
+    \   'conditional'            : ['color02', 'none', 'none'],
+    \   'repeat'                 : ['color02', 'none', 'none'],
+    \   'label'                  : ['color04', 'none', 'italic'],
+    \   'operator'               : ['color03', 'none', 'none'],
     \   'keyword'                : ['color13', 'none', 'none'],
-    \   'exception'              : ['color09', 'none', 'none'],
-    \   'preproc'                : ['color13', 'none', 'none'],
-    \   'type'                   : ['color09', 'none', 'none'],
-    \   'special'                : ['color07', 'none', 'none'],
-    \   'specialchar'            : ['color01', 'none', 'none'],
-    \   'tag'                    : ['color09', 'none', 'underline'],
-    \   'delimiter'              : ['color06', 'color08', 'bold'],
+    \   'exception'              : ['color01', 'none', 'none'],
+    \   'preproc'                : ['color05', 'none', 'none'],
+    \   'type'                   : ['color12', 'none', 'none'],
+    \   'special'                : ['color15', 'none', 'none'],
+    \   'specialchar'            : ['color15', 'none', 'bold'],
+    \   'tag'                    : ['color04', 'none', 'underline'],
+    \   'delimiter'              : ['color06', 'none', 'none'],
     \   'specialcomment'         : ['color14', 'color08', 'bold'],
     \   'debug'                  : ['color03', 'color07', 'strikethrough'],
-    \   'underlined'             : ['color09', 'none', 'underline'],
+    \   'underlined'             : ['color04', 'none', 'underline'],
     \   'ignore'                 : ['none', 'none', 'strikethrough'],
-    \   'error'                  : ['color09', 'none', 'none'],
-    \   'todo'                   : ['color11', 'none', 'bold'],
+    \   'error'                  : ['color01', 'none', 'none'],
+    \   'todo'                   : ['color15', 'none', 'bold'],
     \   'colorcolumn'            : ['none', 'color02', 'none'],
     \   'title'                  : ['color12', 'none', 'bold'],
     \   'attr'                   : ['color06', 'none', 'italic'],
@@ -152,6 +153,8 @@ let s:theme = {
     \   'embed'                  : ['color13', 'none', 'none'],
     \   'vimOption'              : ['color10', 'none', 'none'],
     \   'vimHiAttrib'            : ['color01', 'none', 'none'],
+    \   'typescriptEndColons'    : ['color06', 'none', 'none'],
+    \   'typescriptNull'         : ['color09', 'none', 'none'],
     \   }
 
 function! s:hi(group, colors)
@@ -264,6 +267,10 @@ function! s:apply_theme()
     call s:hi('javaScriptEmbed',   s:theme.embed)
     call s:hi('javaScriptParens',  s:theme.delimiter)
     call s:hi('javaScriptBraces',  s:theme.delimiter)
+
+    " TypeScript
+    call s:hi('typescriptEndColons', s:theme.typescriptEndColons)
+    call s:hi('typescriptNull', s:theme.typescriptNull)
 
     " Vim
     call s:hi('vimOption',         s:theme.vimOption)
