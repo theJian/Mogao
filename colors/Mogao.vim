@@ -67,8 +67,6 @@ let s:ft.none          = 'cterm=NONE gui=NONE'
 let s:ft.bold          = 'cterm=bold gui=bold'
 let s:ft.underline     = 'cterm=underline gui=underline'
 let s:ft.undercurl     = 'cterm=undercurl gui=undercurl'
-let s:ft.undercurl     = 'cterm=undercurl gui=undercurl'
-let s:ft.strikethrough = 'cterm=strikethrough gui=strikethrough'
 let s:ft.reverse       = 'cterm=reverse gui=reverse'
 let s:ft.italic        = 'cterm=italic gui=italic'
 let s:ft.standout      = 'cterm=standout gui=standout'
@@ -81,7 +79,7 @@ let s:theme = {
     \   'popupmenu'              : ['color11', 'color08'],
     \   'popupmenu_select'       : ['color15', 'color07', 'bold'],
     \   'search'                 : ['.', '.', 'reverse'],
-    \   'linenumber'             : ['color03', 'background'],
+    \   'linenumber'             : ['color06', 'background'],
     \   'vertsplit'              : ['background', 'color07'],
     \   'statusline_active'      : ['color11', 'color02', 'none'],
     \   'statusline_inactive'    : ['color06', 'none', 'underline'],
@@ -99,7 +97,7 @@ let s:theme = {
     \   'diffdelete_bg'          : '',
     \   'difftext_fg'            : '',
     \   'difftext_bg'            : '',
-    \   'tabline_bg'             : ['color06', 'color08', 'strikethrough'],
+    \   'tabline_bg'             : ['color06', 'color08', 'none'],
     \   'tabline_active'         : ['color03', 'background', 'bold'],
     \   'tabline_inactive'       : ['color06', 'color08', 'none'],
     \   'normal'                 : ['foreground', 'background'],
@@ -141,9 +139,9 @@ let s:theme = {
     \   'tag'                    : ['color04', 'none', 'underline'],
     \   'delimiter'              : ['color06', 'none', 'none'],
     \   'specialcomment'         : ['color14', 'color08', 'bold'],
-    \   'debug'                  : ['color03', 'color07', 'strikethrough'],
+    \   'debug'                  : ['color03', 'color07', 'underline'],
     \   'underlined'             : ['color04', 'none', 'underline'],
-    \   'ignore'                 : ['none', 'none', 'strikethrough'],
+    \   'ignore'                 : ['none', 'none'],
     \   'error'                  : ['color01', 'none', 'none'],
     \   'todo'                   : ['color15', 'none', 'bold'],
     \   'colorcolumn'            : ['none', 'color02', 'none'],
