@@ -154,6 +154,7 @@ let s:theme = {
     \   'typescriptEndColons'    : ['color06', 'none', 'none'],
     \   'typescriptNull'         : ['color09', 'none', 'none'],
     \   'typescriptRegexpString' : ['color03', 'none', 'bold'],
+    \   'typescriptExceptions'   : ['color01', 'none'],
     \   }
 
 function! s:hi(group, colors)
@@ -271,6 +272,7 @@ function! s:apply_theme()
     call s:hi('typescriptEndColons', s:theme.typescriptEndColons)
     call s:hi('typescriptNull', s:theme.typescriptNull)
     call s:hi('typescriptRegexpString', s:theme.typescriptRegexpString)
+    call s:hi('typescriptExceptions', s:theme.typescriptExceptions)
 
     " Vim
     call s:hi('vimOption',         s:theme.vimOption)
