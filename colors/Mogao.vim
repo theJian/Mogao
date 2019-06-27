@@ -28,7 +28,7 @@ let s:palette.color00 = '#10100E'
 let s:palette.color01 = '#792423'
 let s:palette.color02 = '#005A46'
 let s:palette.color03 = '#9E7D57'
-let s:palette.color04 = '#4379A1'
+let s:palette.color04 = '#1d5064'
 let s:palette.color05 = '#472e27'
 let s:palette.color06 = '#363F37'
 let s:palette.color07 = '#C6C1AD'
@@ -127,7 +127,7 @@ let s:theme = {
     \   'function'               : ['color03', 'none', 'none'],
     \   'statement'              : ['color10', 'none', 'none'],
     \   'conditional'            : ['color09', 'none', 'none'],
-    \   'repeat'                 : ['color12', 'none', 'none'],
+    \   'repeat'                 : ['color10', 'none', 'none'],
     \   'label'                  : ['color11', 'none', 'italic'],
     \   'operator'               : ['color14', 'none', 'none'],
     \   'keyword'                : ['color13', 'none', 'none'],
@@ -139,7 +139,7 @@ let s:theme = {
     \   'tag'                    : ['color04', 'none', 'underline'],
     \   'delimiter'              : ['color06', 'none', 'none'],
     \   'specialcomment'         : ['color14', 'color08', 'bold'],
-    \   'debug'                  : ['color03', 'color07', 'underline'],
+    \   'debug'                  : ['color07', 'color01', 'bold'],
     \   'underlined'             : ['color04', 'none', 'underline'],
     \   'ignore'                 : ['none', 'none'],
     \   'error'                  : ['color01', 'none', 'none'],
