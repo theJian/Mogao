@@ -29,7 +29,7 @@ let s:palette.color01 = '#792423'
 let s:palette.color02 = '#005A46'
 let s:palette.color03 = '#9E7D57'
 let s:palette.color04 = '#1d5064'
-let s:palette.color05 = '#472e27'
+let s:palette.color05 = '#5a2a1d'
 let s:palette.color06 = '#363F37'
 let s:palette.color07 = '#C6C1AD'
 let s:palette.color08 = '#171714'
@@ -155,6 +155,7 @@ let s:theme = {
     \   'typescriptNull'         : ['color09', 'none', 'none'],
     \   'typescriptRegexpString' : ['color03', 'none', 'bold'],
     \   'typescriptExceptions'   : ['color01', 'none'],
+    \   'rustMacro'              : ['color04', 'none', 'italic'],
     \   }
 
 function! s:hi(group, colors)
@@ -288,6 +289,9 @@ function! s:apply_theme()
 
     " Clojure
     call s:hi('clojureMacro',      s:theme.function)
+
+    " Rust
+    call s:hi('rustMacro',         s:theme.rustMacro)
 
     call s:hi('Conceal',           s:theme.conceal)
     call s:hi('FoldColumn',        s:theme.folded)
