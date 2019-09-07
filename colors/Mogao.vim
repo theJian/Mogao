@@ -42,7 +42,7 @@ let s:palette.color14 = '#828871'
 let s:palette.color15 = '#E1E0DB'
 let s:palette.foreground = '#C6C1AD'
 let s:palette.background = '#10100E'
-let s:palette.cursorbackground = '#121211'
+let s:palette.cursorbackground = '#141412'
 
 " Neovim terminal colors
 let g:terminal_color_0  = s:palette.color00
