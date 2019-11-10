@@ -107,7 +107,7 @@ let s:theme = {
     \   'conceal_bg'             : '',
     \   'foldcolumn_fg'          : '',
     \   'foldcolumn_bg'          : '',
-    \   'specialkey'             : ['color06', 'none', 'none'],
+    \   'specialkey'             : ['color07', 'color06', 'none'],
     \   'directory'              : ['color03', 'none', 'none'],
     \   'modemsg'                : '',
     \   'moremsg'                : '',
