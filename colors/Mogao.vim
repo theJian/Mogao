@@ -144,7 +144,7 @@ let s:theme = {
     \   'ignore'                 : ['none', 'none'],
     \   'error'                  : ['color01', 'none', 'none'],
     \   'todo'                   : ['color15', 'none', 'bold'],
-    \   'colorcolumn'            : ['none', 'color02', 'none'],
+    \   'colorcolumn'            : ['none', 'color08', 'none'],
     \   'title'                  : ['color12', 'none', 'bold'],
     \   'attr'                   : ['color06', 'none', 'italic'],
     \   'htmlTagName'            : ['color03', 'none', 'none'],
