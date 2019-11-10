@@ -156,6 +156,8 @@ let s:theme = {
     \   'typescriptRegexpString' : ['color03', 'none', 'bold'],
     \   'typescriptExceptions'   : ['color01', 'none'],
     \   'rustMacro'              : ['color04', 'none', 'italic'],
+    \   'jsxIfOperator'          : ['color09', 'none'],
+    \   'jsxElseOperator'        : ['color09', 'none']
     \   }
 
 function! s:hi(group, colors)
@@ -274,6 +276,10 @@ function! s:apply_theme()
     call s:hi('typescriptNull', s:theme.typescriptNull)
     call s:hi('typescriptRegexpString', s:theme.typescriptRegexpString)
     call s:hi('typescriptExceptions', s:theme.typescriptExceptions)
+
+    " JSX
+    call s:hi('jsxIfOperator', s:theme.jsxIfOperator)
+    call s:hi('jsxElseOperator', s:theme.jsxElseOperator)
 
     " Vim
     call s:hi('vimOption',         s:theme.vimOption)
