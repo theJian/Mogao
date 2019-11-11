@@ -80,7 +80,7 @@ let s:theme = {
     \   'popupmenu_select'       : ['color15', 'color07', 'bold'],
     \   'search'                 : ['.', '.', 'reverse'],
     \   'linenumber'             : ['color06', 'background'],
-    \   'vertsplit'              : ['background', 'color07'],
+    \   'vertsplit'              : ['background', 'color06'],
     \   'statusline_active'      : ['color11', 'color02', 'none'],
     \   'statusline_inactive'    : ['color06', 'none', 'underline'],
     \   'matchparen'             : ['color03', 'color02', 'underline'],
