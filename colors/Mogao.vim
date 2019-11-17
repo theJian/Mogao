@@ -134,7 +134,7 @@ let s:theme = {
     \   'exception'              : ['color01', 'none', 'none'],
     \   'preproc'                : ['color05', 'none', 'none'],
     \   'type'                   : ['color12', 'none', 'none'],
-    \   'special'                : ['color15', 'none', 'none'],
+    \   'special'                : ['color07', 'none', 'none'],
     \   'specialchar'            : ['color15', 'none', 'bold'],
     \   'tag'                    : ['color04', 'none', 'underline'],
     \   'delimiter'              : ['color06', 'none', 'none'],
@@ -272,13 +272,13 @@ function! s:apply_theme()
     call s:hi('javaScriptBraces',  s:theme.delimiter)
 
     " TypeScript
-    call s:hi('typescriptEndColons', s:theme.typescriptEndColons)
-    call s:hi('typescriptNull', s:theme.typescriptNull)
+    call s:hi('typescriptEndColons',    s:theme.typescriptEndColons)
+    call s:hi('typescriptNull',         s:theme.typescriptNull)
     call s:hi('typescriptRegexpString', s:theme.typescriptRegexpString)
-    call s:hi('typescriptExceptions', s:theme.typescriptExceptions)
+    call s:hi('typescriptExceptions',   s:theme.typescriptExceptions)
 
     " JSX
-    call s:hi('jsxIfOperator', s:theme.jsxIfOperator)
+    call s:hi('jsxIfOperator',   s:theme.jsxIfOperator)
     call s:hi('jsxElseOperator', s:theme.jsxElseOperator)
 
     " Vim
