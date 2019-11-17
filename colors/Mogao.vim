@@ -81,7 +81,7 @@ let s:theme = {
     \   'search'                 : ['.', '.', 'reverse'],
     \   'linenumber'             : ['color06', 'background'],
     \   'vertsplit'              : ['background', 'color06'],
-    \   'statusline_active'      : ['color11', 'color02', 'none'],
+    \   'statusline_active'      : ['color07', 'color06', 'none'],
     \   'statusline_inactive'    : ['color06', 'none', 'underline'],
     \   'matchparen'             : ['color03', 'color02', 'underline'],
     \   'visual'                 : ['color15', 'color02', 'bold'],
