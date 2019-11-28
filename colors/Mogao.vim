@@ -149,7 +149,7 @@ let s:theme = {
     \   'attr'                   : ['color06', 'none', 'italic'],
     \   'htmlTagName'            : ['color03', 'none', 'none'],
     \   'embed'                  : ['color13', 'none', 'none'],
-    \   'vimOption'              : ['color10', 'none', 'none'],
+    \   'vimOption'              : ['color09', 'none', 'none'],
     \   'vimHiAttrib'            : ['color01', 'none', 'none'],
     \   'typescriptEndColons'    : ['color06', 'none', 'none'],
     \   'typescriptNull'         : ['color09', 'none', 'none'],
