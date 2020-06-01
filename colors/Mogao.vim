@@ -106,7 +106,7 @@ let s:theme = {
     \   'Normal'                 : ['foreground', 'background'],
     \   'Number'                 : ['color07'],
     \   'Operator'               : ['color14', 'none', 'none'],
-    \   'PMenu'                  : ['color13', 'color05'],
+    \   'PMenu'                  : ['color13', 'color08'],
     \   'PMenuSel'               : ['color08', 'color13', 'bold'],
     \   'Preproc'                : ['color05', 'none', 'none'],
     \   'Question'               : '',
